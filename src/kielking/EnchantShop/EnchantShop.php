@@ -53,21 +53,21 @@ class EnchantShop extends PluginBase implements Listener{
     
     public function onSignChange(SignChangeEvent $ev){
     	$player = $ev->getPlayer();
-      var_dump(self::isStringNumeric($ev->getLine(1)));
-      var_dump(self::isStringNumeric($ev->getLine(3)));
-        if($ev->getLine(0) == "[EnchantShop]"){
+	if($player->isOp()){
+            if($ev->getLine(0) == "[EnchantShop]"){
         	if(is_numeric(self::isStringNumeric($ev->getLine(1)))){
         	    if(is_numeric(self::isStringNumeric($ev->getLine(3)))){
-                $ev->setLine(0, "§a[EnchantShop]");
-                $ev->setLine(1, "§6$" . $ev->getLine(1));
-                $ev->setLine(2, "§b" . $ev->getLine(2));
-                $ev->setLine(3, "§b" . $ev->getLine(3));
-                }else{
+                    $ev->setLine(0, "§a[EnchantShop]");
+                    $ev->setLine(1, "§6$" . $ev->getLine(1));
+                    $ev->setLine(2, "§b" . $ev->getLine(2));
+                    $ev->setLine(3, "§b" . $ev->getLine(3));
+                    }else{
                 	$player->sendMessage(self::PREFIX . "§4The level you specified is not a numeric!");
+                    }
+                }else{
+                    $player->sendMessage(self::PREFIX . "§4The cost you specified is not a numeric!");
                 }
-            }else{
-            	$player->sendMessage(self::PREFIX . "§4The cost you specified is not a numeric!");
-            }
+	    }
         }
     }
     
