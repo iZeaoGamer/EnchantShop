@@ -13,7 +13,7 @@ Format:
 # Latest Phar
 [Click Here](https://poggit.pmmp.io/ci/KielKing/EnchantShop/EnchantShop)
 
-#Hits
+# Hits
 [![HitCount](http://hits.dwyl.io/KielKing/EnchantShop.svg)](http://hits.dwyl.io/KielKing/EnchantShop)
 
 # SoftDepend
