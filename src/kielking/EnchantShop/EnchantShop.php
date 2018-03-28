@@ -222,7 +222,7 @@ class EnchantShop extends PluginBase implements Listener{
                         	if($this->eapi->myMoney($player->getName()) > $cost){
                         	    $this->eapi->reduceMoney($player->getName(), $cost, true);
                               $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
-                              $enchid = Enchantment::getEnchantment(10);
+                              $enchid = Enchantment::getEnchantment(15);
                               $ench =  new EnchantmentInstance($enchid, $level + 0);
                               $i = clone $player->getInventory()->getItemInHand();
                         	    $i->addEnchantment($ench);
