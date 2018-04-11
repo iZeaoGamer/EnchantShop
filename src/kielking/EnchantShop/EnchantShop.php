@@ -53,7 +53,7 @@ class EnchantShop extends PluginBase implements Listener{
     
     public function onSignChange(SignChangeEvent $ev){
     	$player = $ev->getPlayer();
-	if($player->isOp()){
+	if($player->hasPermission("enchantshop.make")){
             if($ev->getLine(0) == "[EnchantShop]"){
         	if(is_numeric(self::isStringNumeric($ev->getLine(1)))){
         	    if(is_numeric(self::isStringNumeric($ev->getLine(3)))){
