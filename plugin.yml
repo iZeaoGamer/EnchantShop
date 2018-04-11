@@ -7,4 +7,4 @@ author: KielKing
 description: EnchantShop
 permissions:
  enchantshop.make:
- default: op
+  default: op
