@@ -5,3 +5,6 @@ api: 3.0.0-ALPHA11
 load: POSTWORLD
 author: KielKing
 description: EnchantShop
+permissions:
+ enchantshop.make:
+ default: op
