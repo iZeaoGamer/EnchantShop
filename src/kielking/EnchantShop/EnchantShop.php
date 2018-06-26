@@ -10,7 +10,7 @@ use pocketmine\tile\Sign;
 use pocketmine\item\Armor;
 use pocketmine\plugin\PluginBase;
 use pocketmine\item\enchantment\{EnchantmentInstance, Enchantment};
-use onebone\economyapi\EconomyAPI;
+use poggit-orphange\economyapi\EconomyAPI;
 
 class EnchantShop extends PluginBase implements Listener{
 	
