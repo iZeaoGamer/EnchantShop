@@ -1,4 +1,4 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/KielKing/EnchantShop
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/benzodoesdev/EnchantShop
 branches:
 - master
 projects:
